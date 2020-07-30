@@ -4,10 +4,10 @@ public class RemoveEvenIntegers {
 
 
 /*
-O(n) - time and space complexity
+O(n)
 
  */
-    private static int[] bruteForceApproach(int[] arr){
+    private static int[] remove(int[] arr){
 
         //find out number of odd numbers
         int counter = 0;
@@ -31,7 +31,7 @@ O(n) - time and space complexity
 
     }
 
-    private static void printArray(int[] arr){
+    private static void print(int[] arr){
 
         for (Integer in: arr
              ) {
@@ -44,7 +44,7 @@ O(n) - time and space complexity
 
 
         int[] arr= {1,5,10,2,6,3,11,15};
-        printArray(bruteForceApproach(arr));
+        print(remove(arr));
 
 
 
