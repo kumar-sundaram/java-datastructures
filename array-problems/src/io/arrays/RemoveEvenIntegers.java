@@ -33,9 +33,9 @@ O(n)
 
     private static void print(int[] arr){
 
-        for (Integer in: arr
+        for (int anArr: arr
              ) {
-            System.out.println("in = " + in);
+            System.out.println("in = " + anArr);
         }
 
     }
