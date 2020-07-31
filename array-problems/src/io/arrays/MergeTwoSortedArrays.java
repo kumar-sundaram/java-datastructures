@@ -6,11 +6,30 @@ public class MergeTwoSortedArrays {
     private static int[] merge(int[] intArr1, int[] intArr2){
 
 
-       /*
-           For each element in intArr1, compare each element in intArr2,
-        */
+        int[] result = new int[intArr1.length + intArr2.length];
+        int i=0, j=0, k=0;
 
-        return new int[intArr1.length + intArr2.length];
+      while(i< intArr1.length && j<intArr2.length){
+
+
+          if(intArr1[i]< intArr2[j]){
+                result[k++] = intArr1[i++];
+          }else{
+              result[k++] = intArr2[j++];
+          }
+
+      }
+
+      while (i< intArr1.length){
+          result[k++] = intArr1[i++];
+      }
+
+      while (j<intArr2.length){
+          result[k++]=intArr2[j++];
+      }
+
+
+        return result;
 
     }
 
